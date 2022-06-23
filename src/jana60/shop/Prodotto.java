@@ -17,6 +17,7 @@ public class Prodotto {
 	- il prodotto esponga un metodo per avere il prezzo comprensivo di iva formattato */
 	
 	// Costanti
+	
 	private DecimalFormat df = new DecimalFormat ("0.00€");
 	
 	// Definisco gli attributi
@@ -87,6 +88,7 @@ public class Prodotto {
 	}
 	
 	// Override
+	
 	public String toString() {
 		return "Codice prodotto: " + codice + ", nome prodotto: " + nome + ", marca prodotto: " + marca + ", prezzo: " + prezzoFormattato();
 	}	
