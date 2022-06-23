@@ -9,10 +9,9 @@ public class Televisori extends Prodotto {
 	
 	// Costruttori
 	
-	public Televisori(int codice, String nome, String marca, double prezzo, double iva, int dimensioni, boolean smart) {
+	public Televisori(int codice, String nome, String marca, double prezzo, double iva, int dimensioni) {
 		super(codice, nome, marca, prezzo, iva);
 		this.dimensioni = dimensioni;
-		this.smart = smart;
 		}
 
 	// Imposto i getters e i setters
@@ -47,7 +46,7 @@ public class Televisori extends Prodotto {
 	
 	// Override
 	public String toString() {
-		return super.toString() + ", dimensioni: " + dimensioni + televisoreSmart();
+		return super.toString() + ", dimensioni: " + dimensioni + " pollici" + televisoreSmart();
 	}
 	}
 	
