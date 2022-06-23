@@ -38,23 +38,21 @@ public class Televisori extends Prodotto {
 	
 	private String televisoreSmart() {
 		if (smart) {
-			return "- smart tv";
+			return " - smart tv";
 		} else {
-			return "- no smart";
+			return " - no smart";
 		}
 	}
 	
 	
 	// Override
 	public String toString() {
-		String stringaTelevisore = super.toString() + " - " + dimensioni;
-		if (smart) {
-			stringaTelevisore += " - smart tv";
-		} return stringaTelevisore;
+		return super.toString() + ", dimensioni: " + dimensioni + televisoreSmart();
+	}
 	}
 	
 	
 	
 	
 
-}
+
